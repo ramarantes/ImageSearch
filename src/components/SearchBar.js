@@ -10,10 +10,11 @@ class SearchBar extends React.Component {
     state = {term: ''};
     onInputClick()
     {
-        console.log('click');
+        console.log('click2');
     }
     onFormSubmit(e){
         e.preventDefault();
+
         this.props.onSearchSubmit(this.state.term);
     }
 
