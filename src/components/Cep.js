@@ -7,7 +7,7 @@ export default class Cep extends React.Component{
         this.state = {cep: "loading..."};
     }
     async componentDidMount(){
-        const resultado = await axios.get('http://lojaqagera.racco.com/api/gera/cep/84600060');
+        const resultado = await axios.get('http://lojaqagera.racco.com/api/gera/cep/' + this.props.cep);
         // .then(function (response) {
         //     console.log(this);
         //     this.setState({cep: response});

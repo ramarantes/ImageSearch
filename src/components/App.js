@@ -3,6 +3,9 @@ import unsplash from '../api/unsplash'
 
 import SearchBar from './SearchBar';
 import ImageList from './ImageList';
+import Tick from './Tick';
+import Cep from './Cep';
+
 
 class App extends React.Component {
 
@@ -22,6 +25,9 @@ class App extends React.Component {
         <div className="ui container" style={{marginTop:'10px'}}>
             <SearchBar onSearchSubmit={this.onSearchSubmit} />
             <ImageList images={this.state.images} />
+            <Tick />
+            <Cep cep="01310000" />
+
         </div>);
     }
 };

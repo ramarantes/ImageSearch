@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+            <script type="text/javascript">
+            $.ajaxSetup({
+                headers:{
+                    'Authorization': "auth username and password"
+                }
+                });
+                $.get( "http://lojaqagera.racco.com/api/gera/cep/01310000",
+                
+                function( data ) {
+                    $( ".result" ).html( data );
+                alert( "Load was performed." );
+                });
+                </script>
+    </body>
+</html>
