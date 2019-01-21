@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default class Cep extends React.Component{
     constructor(props){
-        super(props);
+		super(props);
         this.state = {cep: "loading..."};
     }
     async componentDidMount(){
@@ -16,10 +16,11 @@ export default class Cep extends React.Component{
         //     console.log(error);
         // });
         console.log(resultado);
-         this.setState({cep:resultado.data.namebairro});
+		 this.setState({cep:resultado.data.namebairro});
+		 
     }
 
     render(){
-        return <div>{this.state.cep}</div>;
+        return <div>{this.state.cep} </div>;
     }
 }

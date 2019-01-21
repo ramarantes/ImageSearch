@@ -25,8 +25,7 @@ class App extends React.Component {
             <SearchBar onSearchSubmit={this.onSearchSubmit} />
             <ImageList images={this.state.images} />
             <Tick />
-            <Cep cep="01310000" />
-
+            <Cep cep="01310000" onTesteJaponeiz={() => {alert('feliz');}} debug feliz>feliz</Cep>
         </div>);
     }
 };

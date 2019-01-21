@@ -11,7 +11,7 @@
                     'Authorization': "header apenas para forçar CORS"
                 }
                 });
-                $.get( "http://lojaqagera.racco.com/api/gera/cep/01310000",
+                $.get( "http://lojaqagera.racco.com.br/api/gera/cep/01310000",
                 // $.get( "http://localhost:49415/api/gera/cep/01310000",
                 function( data ) {
                     $( ".result" ).html( data.rua );
